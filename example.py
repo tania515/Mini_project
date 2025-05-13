@@ -27,6 +27,7 @@ client3 = Client("Dima", [order2])
 discounted_price = Discount.calculate_discounted_price(product1.price, 10)
 print(f"Сниженная цена на {product1.name}: {discounted_price}")  
 
+product1.price=discounted_price
 order3 = Order([product2, product1])
 
 # Выводим общее количество заказов
